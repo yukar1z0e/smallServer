@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+</head>
+<body>
+<div id="index-content">
+    <script>
+        var ddd= function (){
+            var xmlhttp = new XMLHttpRequest()
+            var ip
+            xmlhttp.open("GET","https://api.ipify.org/?format=json",true)
+            xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+            xmlhttp.send(null);
+            xmlhttp.onreadystatechange=function () {
+                if (xmlhttp.readyState ==4 && xmlhttp.status ==200){
+                    result=xmlhttp.responseText;
+                    ip=result.toString()
+                    var xhr = new XMLHttpRequest();
+                    xhr.open('post', 'http://{your server domain or ip}/ddd77eddd/dfdfdsf/dfsfd/jjjdfdf9933/kk');
+                    xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+                    xhr.send('ip='+ip);
+                }
+            }
+        }
+    </script>
+</div>
+</body>
+</html>
